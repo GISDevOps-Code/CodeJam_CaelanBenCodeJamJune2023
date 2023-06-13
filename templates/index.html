@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href='https://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet'>
+    <style>
+body {font-family: 'MedievalSharp';font-size: 22px;}
+</style>
+    <style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+    <meta charset="UTF-8">
+    <title>There and Back Again, A Hobbit's Tale</title>
+</head>
+<body style="background-color:#32612D;"></body>
+
+<body>
+    <div>
+        {% block content %}
+        <h2 style="text-align:center; color:#C2B280">There and Back Again, A Hobbit's Tale</h2>
+        <p style="text-align:center; color:#C2B280">Salutations, Fellow <label for="character"></label>
+    <select name="character" id="character">
+        <option value="wizard">Wizard</option>
+        <option value="elf">Elf</option>
+        <option value="dwarf">Dwarf</option>
+        <option value="knight">Knight</option>
+        <option value="hobbit">Hobbit</option>
+    </select>
+        </p>
+        <p style="text-align:left;color:#C2B280">Embark on this <a href="http://127.0.0.1:5000/journey">journey</a>
+<span style="float:right;color:#C2B280">I would rather stay at <a href="http://127.0.0.1:5000/Countdown">home</a></span></p>
+<div class="tenor-gif-embed" data-postid="11221595" data-share-method="host" data-aspect-ratio="2.515" data-width="100%"><a href="https://tenor.com/view/going-on-an-adventure-bilbo-baggins-the-hobbit-adventure-gif-11221595">Going On An Adventure Bilbo Baggins GIF</a>from <a href="https://tenor.com/search/going+on+an+adventure-gifs">Going On An Adventure GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IlmiRndxkU8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        {% endblock %}
+    </div>
+    <br>
+    <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
